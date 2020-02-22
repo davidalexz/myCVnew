@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	--ff: 'Roboto Mono';
+
+	--clr-light: #fff;
+	--clr-dark: #303030;
+	--clr-accent: #16e0bd;
+
+	--fs-h1: 3rem;
+	--fs-h2: 2.25rem;
+	--fs-h3: 1.25rem;
+	--fs-body: 1rem;
+
+	--bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 800px) {
+	:root {
+		--fs-h1: 4.5rem;
+		--fs-h2: 3.75rem;
+		--fs-h3: 1.5rem;
+		--fs-body: 1.125rem;
+	}
+}
+
+body {
+	background: var(--clr-light);
+	color: var(--clr-dark);
+	margin: 0;
+	font-family: var(--ff);
+	font-size: var(--fs-body);
+	line-height: 1.5;
+}
+
+section {
+	padding: 3em 1em;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1;
+	margin: 0;
+}
+
+.text-name {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: var(--fs-h1);
+}
+
+h2 {
+	font-size: var(--fs-h2);
+}
+
+h3 {
+	font-size: var(--fs-h3);
+}
+
+.section-title {
+	margin-bottom: 0.25em;
+}
+
+.section-subtitle {
+	margin: 0;
+	font-size: var(--fs-h3);
+}
+
+.section-subtitle-intro,
+.section-subtitle-resume {
+	padding: 0.5em 1em;
+	background: var(--clr-accent);
+}
+
+.section-subtitle-intro {
+	display: inline-block;
+}
+
+.intro {
+	margin: 0 auto;
+}
+
+.intro-pic {
+	box-shadow: var(--bs);
+}
+
+@media (min-width: 600px) {
+	.intro {
+		display: grid;
+		width: min-content;
+		margin: o auto;
+		grid-column-gap: 1em;
+		grid-template-areas:
+			'img title'
+			'img subtitle';
+		grid-template-columns: min-content max-content;
+	}
+
+	.intro-pic {
+		grid-area: img;
+		min-width: 250px;
+	}
+
+	.section-subtitle-intro {
+		align-self: start;
+	}
+}
+
+.about-me {
+	text-align: center;
+}
+
+.section-title-about {
+	color: var(--clr-accent);
+}
+
+.section-title-about::after {
+	content: '';
+	display: block;
+	width: 4em;
+	height: 1px;
+	margin: 0.5em auto 1em;
+	background-color: currentColor;
+	opacity: 0.3;
+}
+
+/* My Resume */
