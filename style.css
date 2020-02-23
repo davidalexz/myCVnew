@@ -38,7 +38,7 @@ body {
 }
 
 section {
-	padding: 3em 1em;
+	padding: 2em 1em;
 }
 
 img {
@@ -79,7 +79,8 @@ h3 {
 }
 
 .section-subtitle-intro,
-.section-subtitle-resume {
+.section-subtitle-resume,
+.btn {
 	padding: 0.5em 1em;
 	background: var(--clr-accent);
 }
@@ -100,7 +101,7 @@ h3 {
 	.intro {
 		display: grid;
 		width: min-content;
-		margin: o auto;
+		margin: 0 auto;
 		grid-column-gap: 1em;
 		grid-template-areas:
 			'img title'
@@ -137,3 +138,33 @@ h3 {
 }
 
 /* My Resume */
+
+.cards,
+.buttons-navi {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1em;
+}
+
+.buttons-navi {
+	margin: 0 auto;
+	width: 30%;
+	justify-content: space-evenly;
+}
+
+.card {
+	margin: 1em;
+}
+
+@media (max-width: 600px) {
+	.cards {
+		display: flex;
+		flex-direction: column;
+		padding: 2em 1em;
+	}
+	.card,
+	.intro,
+	.btn {
+		margin: 1em;
+	}
+}
