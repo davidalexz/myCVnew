@@ -137,10 +137,9 @@ h3 {
 	opacity: 0.3;
 }
 
-/* My Resume */
+/* My CV */
 
-.cards,
-.buttons-navi {
+.cards {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 1em;
@@ -149,6 +148,7 @@ h3 {
 .buttons-navi {
 	margin: 0 auto;
 	width: 30%;
+	display: flex;
 	justify-content: space-evenly;
 }
 
@@ -168,3 +168,5 @@ h3 {
 		margin: 1em;
 	}
 }
+
+/* My work */
