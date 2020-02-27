@@ -37,6 +37,15 @@ body {
 	line-height: 1.5;
 }
 
+header {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.logo:first-child {
+	margin-right: auto;
+}
+
 section {
 	padding: 2em 1em;
 }
@@ -146,10 +155,7 @@ h3 {
 }
 
 .buttons-navi {
-	margin: 0 auto;
-	width: 30%;
-	display: flex;
-	justify-content: space-evenly;
+	padding: 3px;
 }
 
 .card {
@@ -163,9 +169,8 @@ h3 {
 		padding: 2em 1em;
 	}
 	.card,
-	.intro,
-	.btn {
-		margin: 1em;
+	.intro {
+		margin: 2em;
 	}
 }
 
