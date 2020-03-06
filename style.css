@@ -1,5 +1,4 @@
 *,
-*::before,
 *::after {
 	box-sizing: border-box;
 }
@@ -31,10 +30,11 @@
 body {
 	background: var(--clr-light);
 	color: var(--clr-dark);
-	margin: 0;
 	font-family: var(--ff);
 	font-size: var(--fs-body);
 	line-height: 1.5;
+	min-height: 100vh;
+	position: relative;
 }
 
 header {
@@ -125,6 +125,7 @@ h3 {
 
 	.section-subtitle-intro {
 		align-self: start;
+		width: 95%;
 	}
 }
 
@@ -146,7 +147,29 @@ h3 {
 	opacity: 0.3;
 }
 
-/* My CV */
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+/* Hamburger functionality */
+
+label {
+	font-size: 33px;
+	display: none;
+	float: right;
+}
+
+#toggle {
+	display: none;
+}
+
+.buttons-navi a {
+	clear: right;
+}
+
+/* Cards */
 
 .cards {
 	display: flex;
@@ -154,11 +177,8 @@ h3 {
 	margin-bottom: 1em;
 }
 
-.buttons-navi {
-	padding: 3px;
-}
-
 .card {
+	width: 30rem;
 	margin: 1em;
 }
 
@@ -170,8 +190,30 @@ h3 {
 	}
 	.card,
 	.intro {
-		margin: 2em;
+		margin: 40px;
+	}
+	.card {
+		width: inherit;
+	}
+	label {
+		display: block;
+		cursor: pointer;
+		margin-right: 3px;
+	}
+	.buttons-navi {
+		text-align: center;
+		display: none;
+	}
+	.buttons-navi a {
+		display: block;
+		margin: 3px;
+		width: 130px;
+	}
+	#toggle:checked + .buttons-navi {
+		display: block;
+		margin: 0;
+	}
+	.section-subtitle-intro {
+		width: initial;
 	}
 }
-
-/* My work */
