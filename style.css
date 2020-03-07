@@ -213,9 +213,12 @@ label {
 		text-align: center;
 		display: none;
 	}
-	.buttons-navi
-	'img subtitle';30px;
+	.buttons-navi a {
+		display: block;
+		margin: 3px;
+		width: 130px;
 	}
+
 	#toggle:checked + .buttons-navi {
 		display: block;
 		margin: 0;
