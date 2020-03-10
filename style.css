@@ -107,7 +107,7 @@ h3 {
 	box-shadow: var(--bs);
 }
 
-/* Bit smaller screens intro / image */
+/* Smaller screens intro / image */
 
 @media (min-width: 600px) {
 	.intro {
@@ -155,6 +155,7 @@ h3 {
 footer {
 	text-align: center;
 	margin-top: auto;
+	margin-bottom: 3px;
 	width: 100%;
 }
 
@@ -176,6 +177,7 @@ label {
 
 .buttons-navi a {
 	clear: right;
+	margin-top: 3px;
 }
 
 /* Cards */
