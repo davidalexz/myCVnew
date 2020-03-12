@@ -6,7 +6,7 @@
 /* Custom props */
 
 :root {
-	--ff: 'Roboto Mono';
+	--ff: "Roboto Mono";
 
 	--clr-dark: #303030;
 	--clr-accent: #16e0bd;
@@ -79,17 +79,7 @@ h3 {
 	font-size: var(--fs-h3);
 }
 
-.section-title {
-	margin-bottom: 0.25em;
-}
-
-.section-subtitle {
-	margin: 0;
-	font-size: var(--fs-h3);
-}
-
 .section-subtitle-intro,
-.section-subtitle-resume,
 .btn {
 	padding: 0.5em 1em;
 	background: var(--clr-accent);
@@ -116,8 +106,8 @@ h3 {
 		margin: 0 auto;
 		grid-column-gap: 1em;
 		grid-template-areas:
-			'img title'
-			'img subtitle';
+			"img title"
+			"img subtitle";
 		grid-template-columns: min-content max-content;
 	}
 
@@ -141,7 +131,7 @@ h3 {
 }
 
 .section-title-about::after {
-	content: '';
+	content: "";
 	display: block;
 	width: 4em;
 	height: 1px;
