@@ -82,10 +82,6 @@ h2 {
 	display: inline-block;
 }
 
-.intro {
-	margin: 0 auto;
-}
-
 .intro-pic {
 	box-shadow: var(--bs);
 }
@@ -111,7 +107,7 @@ h2 {
 
 	.section-subtitle-intro {
 		align-self: start;
-		width: 95%;
+		width: 100%;
 	}
 }
 
@@ -201,14 +197,11 @@ label {
 	.buttons-navi a {
 		display: block;
 		margin: 3px;
-		width: 130px;
+		width: 110px;
 	}
 
 	#toggle:checked + .buttons-navi {
 		display: block;
 		margin: 0;
-	}
-	.section-subtitle-intro {
-		width: initial;
 	}
 }
